@@ -76,9 +76,9 @@ function adicionarCor(nomeDaCor) {
 }
 
 // Começa com três cores na tela
-adicionaCor("vermelho");
-adicionaCor("verde");
-adicionaCor("azul");
+adicionarCor("vermelho");
+adicionarCor("verde");
+adicionarCor("azul");
 proximaCor = 3;
 
 document.querySelector("#btn-adicionar").addEventListener("click", () => {
@@ -96,7 +96,7 @@ const contador = document.querySelector("#contador");
 
 // O evento "input" dispara a cada letra digitada
 campoNome.addEventListener("input", () => {
-  const nome = campoNome.ariaValueMax.trim();
+  const nome = campoNome.value.trim();
 
   if (nome === "") {
     saudacao.textContent = "Digite algo no campo acima.";
@@ -104,5 +104,5 @@ campoNome.addEventListener("input", () => {
     saudacao.textContent = `Olá, ${nome}!`;
   }
 
-  contador.textContent = `Letras: ${campoNome.ariaValueMax.length}`;
+  contador.textContent = `Letras: ${campoNome.value.length}`;
 });
