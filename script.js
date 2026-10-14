@@ -15,20 +15,20 @@ botoesMenu.forEach((botao) => {
         botoesMenu.forEach((b) => b.classList.remove("ativo"));
     
         // Mostra só a página escolhida e destaca o botão clicado
-        document.querySelector('#' + idDaPagina).classList.add("visivel");
+        document.querySelector("#" + idDaPagina).classList.add("visivel");
         botao.classList.add("ativo");
 
         console.log("mostrando a página:", idDaPagina);
     });
 });
    // 2. ALTERAR TEXTO E ESTILO
-   const titulo = document.querySelector.Selector("#titulo");
+   const titulo = document.querySelector("#titulo");
    const paragrafos = document.querySelectorAll(".texto");
 
   // Muda o texto e a cor do título
   document.querySelector("#btn-mudar-titulo").addEventListener("click", () => {
    titulo.textContent = "Título mudado pelo JavaScript!";
-   titulo.style.color = "#d81f91" ;
+   titulo.style.color = "#ef6f62" ;
   });
 
   // Passa todos os paragrafos para maiúsculos

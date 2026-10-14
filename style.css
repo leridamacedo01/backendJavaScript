@@ -1,3 +1,46 @@
 body {
-    background-color: rgb(244, 188, 218);
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: aliceblue;
+   color:rgb(7, 7, 114);
+   margin: 0;
+   line-height: 1.6;
 }
+main {
+    max-width: 640px;
+    margin: 32px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-left: 6px solid #ef6f62;
+}
+h1 { margin-top: 0; }
+h2 { font-size: 1.2rem; margin-top: 32px; }
+nav { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+buttom, input {
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+}
+button {
+    background: #2f6f62;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+button:hover { background: #24574d; }
+    nav button { background:#fcdaff; color:white; }
+    nav button.ativo { background: #69edd3; color: white; }
+    li { padding: 4px 0; }
+    li button { margin-left: 8px; padding: 2px 8px; font-size: 13px; background: rgb(250, 84, 84);}
+    .linha { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+
+    /* Classe ligada e desliga e desligada pelo javascript */
+    .destaque { background: #fff2b3; padding: 4px 8px; }
+
+    /* Modo escuro: o javascript coloca esta classe no <body>*/
+    body.escuro { background: #1a2220; color:#e6ece9; }
+    body.escuro main { background: #25302d; }
+
+    /* Só a "página" com a classe .visivel aparece */
+    .pagina { display: none;}
+    .pagina.visivel { display: block;}
